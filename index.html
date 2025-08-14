@@ -1,1 +1,250 @@
-eu
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proteja Seus Filhos na Internet | Guia Essencial</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Custom CSS */
+        .dark-gradient {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+        }
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        .highlight-box {
+            position: relative;
+            z-index: 1;
+        }
+        .highlight-box::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+            background-size: 400%;
+            z-index: -1;
+            border-radius: 0.5rem;
+            opacity: 0.7;
+            filter: blur(5px);
+            animation: glowing 20s linear infinite;
+        }
+        @keyframes glowing {
+            0% { background-position: 0 0; }
+            50% { background-position: 400% 0; }
+            100% { background-position: 0 0; }
+        }
+    </style>
+</head>
+<body class="dark-gradient text-gray-200 font-sans">
+    <div class="container mx-auto px-4 py-8 max-w-md">
+        <!-- Header -->
+        <header class="text-center mb-8">
+            <h1 class="text-3xl font-bold text-red-500 mb-2">ALERTA PARA PAIS</h1>
+            <h2 class="text-2xl font-bold mb-4">Seu Filho Está Seguro na Internet?</h2>
+            <div class="w-full h-48 bg-gray-800 rounded-lg mb-4 flex items-center justify-center">
+                <!-- Placeholder for ebook image -->
+                <i class="fas fa-book-open text-5xl text-gray-500"></i>
+            </div>
+        </header>
+
+        <!-- Price Offer -->
+        <div class="bg-gray-900 rounded-xl p-6 mb-8 text-center highlight-box pulse-animation">
+            <div class="flex justify-center items-baseline mb-2">
+                <span class="text-2xl line-through text-gray-400 mr-2">R$54,90</span>
+                <span class="text-4xl font-bold text-green-400">R$19,90</span>
+            </div>
+            <p class="text-sm mb-4">Oferta válida por tempo limitado!</p>
+            <a href="https://pay.cakto.com.br/o92784o_526497" class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg inline-block transition duration-300 transform hover:scale-105">
+                COMPRAR AGORA <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+        </div>
+
+        <!-- Danger Section -->
+        <section class="mb-10">
+            <h3 class="text-xl font-bold mb-4 text-red-400 border-b border-red-500 pb-2">Os Perigos que Seu Filho Enfrenta Online</h3>
+            
+            <!-- Grooming -->
+            <div class="bg-gray-800 rounded-lg p-4 mb-4">
+                <div class="flex items-start">
+                    <div class="text-red-500 mr-3 mt-1">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-lg mb-1">Grooming</h4>
+                        <p class="text-sm">Adultos se passando por crianças para ganhar a confiança dos menores com fins de abuso sexual. Eles podem estar em qualquer aplicativo ou jogo online.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Cyberbullying -->
+            <div class="bg-gray-800 rounded-lg p-4 mb-4">
+                <div class="flex items-start">
+                    <div class="text-red-500 mr-3 mt-1">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-lg mb-1">Cyberbullying</h4>
+                        <p class="text-sm">Assédio virtual que pode causar depressão, ansiedade e até levar ao suicídio. Seu filho pode ser vítima ou até mesmo praticante sem seu conhecimento.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Conteúdo Impróprio -->
+            <div class="bg-gray-800 rounded-lg p-4 mb-4">
+                <div class="flex items-start">
+                    <div class="text-red-500 mr-3 mt-1">
+                        <i class="fas fa-eye-slash"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-lg mb-1">Conteúdo Impróprio</h4>
+                        <p class="text-sm">Pornografia, violência extrema, desafios perigosos e discursos de ódio estão a apenas alguns cliques de distância, mesmo em plataformas aparentemente seguras.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Exposição -->
+            <div class="bg-gray-800 rounded-lg p-4">
+                <div class="flex items-start">
+                    <div class="text-red-500 mr-3 mt-1">
+                        <i class="fas fa-user-secret"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-lg mb-1">Exposição de Dados</h4>
+                        <p class="text-sm">Fotos, localização, rotina e informações pessoais podem ser compartilhadas sem querer, colocando toda a família em risco.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Solution Section -->
+        <section class="mb-10">
+            <h3 class="text-xl font-bold mb-4 text-green-400 border-b border-green-500 pb-2">Como Este Ebook Pode Ajudar</h3>
+            <ul class="space-y-3">
+                <li class="flex items-start">
+                    <i class="fas fa-check text-green-400 mr-2 mt-1"></i>
+                    <span>Identificar sinais de que seu filho pode estar em perigo</span>
+                </li>
+                <li class="flex items-start">
+                    <i class="fas fa-check text-green-400 mr-2 mt-1"></i>
+                    <span>Configurar controles parentais eficazes em todos os dispositivos</span>
+                </li>
+                <li class="flex items-start">
+                    <i class="fas fa-check text-green-400 mr-2 mt-1"></i>
+                    <span>Conversar com seus filhos sobre segurança digital sem parecer invasivo</span>
+                </li>
+                <li class="flex items-start">
+                    <i class="fas fa-check text-green-400 mr-2 mt-1"></i>
+                    <span>Reconhecer os aplicativos e jogos mais perigosos</span>
+                </li>
+                <li class="flex items-start">
+                    <i class="fas fa-check text-green-400 mr-2 mt-1"></i>
+                    <span>Agir rapidamente se algo der errado</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Final CTA -->
+        <div class="text-center mb-10">
+            <h3 class="text-2xl font-bold mb-4">Não Espere Que Algo Ruim Aconteça</h3>
+            <p class="mb-6">Por apenas <span class="text-green-400 font-bold">R$19,90</span> você terá acesso imediato a todas as estratégias que os especialistas usam para proteger crianças online.</p>
+            <a href="https://pay.cakto.com.br/o92784o_526497" class="bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-8 rounded-lg inline-block transition duration-300 transform hover:scale-105 text-lg">
+                GARANTIR MEU ACESSO <i class="fas fa-lock ml-2"></i>
+            </a>
+            <p class="text-xs mt-4 text-gray-400">Pagamento 100% seguro | Acesso imediato após a compra</p>
+        </div>
+
+        <!-- FAQ -->
+        <section class="mb-8">
+            <h3 class="text-xl font-bold mb-4 border-b border-gray-700 pb-2">Perguntas Frequentes</h3>
+            <div class="space-y-4">
+                <div class="border border-gray-700 rounded-lg p-4">
+                    <h4 class="font-bold mb-2">Como recebo o ebook após a compra?</h4>
+                    <p class="text-sm">Imediatamente após a confirmação do pagamento, você receberá um e-mail com o link para download do ebook em PDF.</p>
+                </div>
+                <div class="border border-gray-700 rounded-lg p-4">
+                    <h4 class="font-bold mb-2">Posso imprimir o ebook?</h4>
+                    <p class="text-sm">Sim, o arquivo PDF pode ser impresso para sua conveniência.</p>
+                </div>
+                <div class="border border-gray-700 rounded-lg p-4">
+                    <h4 class="font-bold mb-2">E se eu não gostar do conteúdo?</h4>
+                    <p class="text-sm">Oferecemos 7 dias de garantia incondicional. Se por qualquer motivo você não estiver satisfeito, basta nos enviar um e-mail para receber o reembolso integral.</p>
+                </div>
+                <div class="border border-gray-700 rounded-lg p-4">
+                    <h4 class="font-bold mb-2">Precisa de suporte?</h4>
+                    <p class="text-sm">Entre em contato conosco pelo email: <a href="mailto:suporteeecontato@gmail.com" class="text-blue-400 hover:underline">suporteeecontato@gmail.com</a></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Offer -->
+        <div class="bg-gray-900 rounded-xl p-6 text-center">
+            <h3 class="text-xl font-bold mb-2">Oferta Termina em:</h3>
+            <div class="flex justify-center space-x-2 mb-4">
+                <div class="bg-gray-800 rounded p-2 w-12">
+                    <div class="font-bold">03</div>
+                    <div class="text-xs">Horas</div>
+                </div>
+                <div class="bg-gray-800 rounded p-2 w-12">
+                    <div class="font-bold">45</div>
+                    <div class="text-xs">Minutos</div>
+                </div>
+                <div class="bg-gray-800 rounded p-2 w-12">
+                    <div class="font-bold">22</div>
+                    <div class="text-xs">Segundos</div>
+                </div>
+            </div>
+            <a href="https://pay.cakto.com.br/o92784o_526497" class="bg-gradient-to-r from-red-600 to-orange-500 hover:from-red-700 hover:to-orange-600 text-white font-bold py-3 px-6 rounded-lg inline-block transition duration-300">
+                QUERO PROTEGER MEUS FILHOS AGORA
+            </a>
+        </div>
+
+        <!-- Footer -->
+        <footer class="mt-10 text-center text-xs text-gray-500">
+            <p>© 2023 Proteção Digital Familiar. Todos os direitos reservados.</p>
+            <p class="mt-2"><a href="#" class="hover:underline">Termos de Uso</a> | <a href="#" class="hover:underline">Política de Privacidade</a></p>
+        </footer>
+    </div>
+
+    <script>
+        // Simple countdown timer
+        function updateCountdown() {
+            const now = new Date();
+            const endOfDay = new Date();
+            endOfDay.setHours(23, 59, 59, 999);
+            
+            const diff = endOfDay - now;
+            
+            const hours = Math.floor(diff / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+            
+            document.querySelectorAll('.bg-gray-800 div')[0].textContent = hours.toString().padStart(2, '0');
+            document.querySelectorAll('.bg-gray-800 div')[2].textContent = minutes.toString().padStart(2, '0');
+            document.querySelectorAll('.bg-gray-800 div')[4].textContent = seconds.toString().padStart(2, '0');
+        }
+        
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+        
+        // Add smooth scroll to links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
