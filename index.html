@@ -2,14 +2,18 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proteja Seus Filhos na Internet | Guia Essencial</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Proteja Seus Filhos na Internet</title>
     <style>
-        /* Custom CSS */
+        html {
+            font-size: 14px;
+        }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
         .dark-gradient {
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
         }
         .pulse-animation {
             animation: pulse 2s infinite;
@@ -19,232 +23,262 @@
             50% { transform: scale(1.05); }
             100% { transform: scale(1); }
         }
-        .highlight-box {
-            position: relative;
-            z-index: 1;
+        .feature-card {
+            transition: all 0.3s ease;
         }
-        .highlight-box::before {
-            content: '';
-            position: absolute;
-            top: -2px;
-            left: -2px;
-            right: -2px;
-            bottom: -2px;
-            background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-            background-size: 400%;
-            z-index: -1;
-            border-radius: 0.5rem;
-            opacity: 0.7;
-            filter: blur(5px);
-            animation: glowing 20s linear infinite;
-        }
-        @keyframes glowing {
-            0% { background-position: 0 0; }
-            50% { background-position: 400% 0; }
-            100% { background-position: 0 0; }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
-<body class="dark-gradient text-gray-200 font-sans">
-    <div class="container mx-auto px-4 py-8 max-w-md">
+<body class="dark-gradient text-gray-200 min-h-screen font-sans">
+    <div class="container mx-auto px-4 py-8">
         <!-- Header -->
-        <header class="text-center mb-8">
-            <h1 class="text-3xl font-bold text-red-500 mb-2">ALERTA PARA PAIS</h1>
-            <h2 class="text-2xl font-bold mb-4">Seu Filho Está Seguro na Internet?</h2>
-            <div class="w-full h-48 bg-gray-800 rounded-lg mb-4 flex items-center justify-center">
-                <!-- Placeholder for ebook image -->
-                <i class="fas fa-book-open text-5xl text-gray-500"></i>
-            </div>
+        <header class="text-center mb-6 px-2">
+            <h1 class="text-2xl font-bold text-red-500 mb-3">PROTEJA SEUS FILHOS NA INTERNET</h1>
+            <p class="text-base text-gray-300">O guia definitivo para manter suas crianças seguras no mundo digital</p>
         </header>
 
-        <!-- Price Offer -->
-        <div class="bg-gray-900 rounded-xl p-6 mb-8 text-center highlight-box pulse-animation">
-            <div class="flex justify-center items-baseline mb-2">
-                <span class="text-2xl line-through text-gray-400 mr-2">R$54,90</span>
-                <span class="text-4xl font-bold text-green-400">R$19,90</span>
-            </div>
-            <p class="text-sm mb-4">Oferta válida por tempo limitado!</p>
-            <a href="https://pay.cakto.com.br/o92784o_526497" class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg inline-block transition duration-300 transform hover:scale-105">
-                COMPRAR AGORA <i class="fas fa-arrow-right ml-2"></i>
-            </a>
-        </div>
-
-        <!-- Danger Section -->
-        <section class="mb-10">
-            <h3 class="text-xl font-bold mb-4 text-red-400 border-b border-red-500 pb-2">Os Perigos que Seu Filho Enfrenta Online</h3>
-            
-            <!-- Grooming -->
-            <div class="bg-gray-800 rounded-lg p-4 mb-4">
-                <div class="flex items-start">
-                    <div class="text-red-500 mr-3 mt-1">
-                        <i class="fas fa-exclamation-triangle"></i>
-                    </div>
-                    <div>
-                        <h4 class="font-bold text-lg mb-1">Grooming</h4>
-                        <p class="text-sm">Adultos se passando por crianças para ganhar a confiança dos menores com fins de abuso sexual. Eles podem estar em qualquer aplicativo ou jogo online.</p>
+        <!-- Hero Section -->
+        <section class="flex flex-col items-center mb-10 px-2">
+            <div class="mb-6 w-full max-w-xs">
+                <!-- Placeholder for ebook cover image -->
+                <div class="bg-gray-800 rounded-lg shadow-2xl overflow-hidden mx-auto" style="width: 250px; height: 350px;">
+                    <div class="w-full h-full flex items-center justify-center bg-gray-700">
+                        <span class="text-gray-400 text-sm">CAPA DO EBOOK AQUI</span>
                     </div>
                 </div>
             </div>
             
-            <!-- Cyberbullying -->
-            <div class="bg-gray-800 rounded-lg p-4 mb-4">
-                <div class="flex items-start">
-                    <div class="text-red-500 mr-3 mt-1">
-                        <i class="fas fa-bullhorn"></i>
+            <div class="w-full">
+                <div class="bg-gray-800 border-l-4 border-red-500 p-4 rounded-lg shadow-lg mb-6">
+                    <h2 class="text-xl font-bold text-white mb-3">OFERTA POR TEMPO LIMITADO!</h2>
+                    <div class="flex items-center mb-3">
+                        <span class="text-gray-400 line-through text-base mr-3">R$54,90</span>
+                        <span class="text-2xl font-bold text-red-500">R$19,90</span>
                     </div>
-                    <div>
-                        <h4 class="font-bold text-lg mb-1">Cyberbullying</h4>
-                        <p class="text-sm">Assédio virtual que pode causar depressão, ansiedade e até levar ao suicídio. Seu filho pode ser vítima ou até mesmo praticante sem seu conhecimento.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Conteúdo Impróprio -->
-            <div class="bg-gray-800 rounded-lg p-4 mb-4">
-                <div class="flex items-start">
-                    <div class="text-red-500 mr-3 mt-1">
-                        <i class="fas fa-eye-slash"></i>
-                    </div>
-                    <div>
-                        <h4 class="font-bold text-lg mb-1">Conteúdo Impróprio</h4>
-                        <p class="text-sm">Pornografia, violência extrema, desafios perigosos e discursos de ódio estão a apenas alguns cliques de distância, mesmo em plataformas aparentemente seguras.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Exposição -->
-            <div class="bg-gray-800 rounded-lg p-4">
-                <div class="flex items-start">
-                    <div class="text-red-500 mr-3 mt-1">
-                        <i class="fas fa-user-secret"></i>
-                    </div>
-                    <div>
-                        <h4 class="font-bold text-lg mb-1">Exposição de Dados</h4>
-                        <p class="text-sm">Fotos, localização, rotina e informações pessoais podem ser compartilhadas sem querer, colocando toda a família em risco.</p>
-                    </div>
+                    <p class="text-gray-300 text-sm mb-4">Adquira agora este guia essencial e aprenda como proteger seus filhos dos perigos da internet.</p>
+                    <a href="https://pay.cakto.com.br/o92784o_526497" class="pulse-animation bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg text-base w-full text-center block transition duration-300">
+                        COMPRAR AGORA <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
                 </div>
             </div>
         </section>
 
-        <!-- Solution Section -->
-        <section class="mb-10">
-            <h3 class="text-xl font-bold mb-4 text-green-400 border-b border-green-500 pb-2">Como Este Ebook Pode Ajudar</h3>
-            <ul class="space-y-3">
-                <li class="flex items-start">
-                    <i class="fas fa-check text-green-400 mr-2 mt-1"></i>
-                    <span>Identificar sinais de que seu filho pode estar em perigo</span>
-                </li>
-                <li class="flex items-start">
-                    <i class="fas fa-check text-green-400 mr-2 mt-1"></i>
-                    <span>Configurar controles parentais eficazes em todos os dispositivos</span>
-                </li>
-                <li class="flex items-start">
-                    <i class="fas fa-check text-green-400 mr-2 mt-1"></i>
-                    <span>Conversar com seus filhos sobre segurança digital sem parecer invasivo</span>
-                </li>
-                <li class="flex items-start">
-                    <i class="fas fa-check text-green-400 mr-2 mt-1"></i>
-                    <span>Reconhecer os aplicativos e jogos mais perigosos</span>
-                </li>
-                <li class="flex items-start">
-                    <i class="fas fa-check text-green-400 mr-2 mt-1"></i>
-                    <span>Agir rapidamente se algo der errado</span>
-                </li>
-            </ul>
+        <!-- Danger Section -->
+        <section class="mb-12 px-2">
+            <h2 class="text-xl font-bold text-center mb-6 text-white">OS PERIGOS QUE SEUS FILHOS ENFRENTAM ONLINE</h2>
+            
+            <div class="grid grid-cols-1 gap-4">
+                <!-- Grooming Card -->
+                <div class="feature-card bg-gray-800 rounded-lg p-4 shadow-lg border-t-4 border-red-500">
+                    <div class="flex items-center mb-3">
+                        <div class="bg-red-500 p-2 rounded-full mr-3">
+                            <i class="fas fa-user-secret text-white text-base"></i>
+                        </div>
+                        <h3 class="text-base font-bold text-white">Grooming</h3>
+                    </div>
+                    <p class="text-gray-300 text-sm">Adultos que se passam por crianças para ganhar a confiança dos menores com intenções maliciosas. Seu filho pode estar conversando com um predador sem saber.</p>
+                </div>
+                
+                <!-- Cyberbullying Card -->
+                <div class="feature-card bg-gray-800 rounded-lg p-6 shadow-lg border-t-4 border-red-500">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-red-500 p-3 rounded-full mr-4">
+                            <i class="fas fa-bullhorn text-white text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">Cyberbullying</h3>
+                    </div>
+                    <p class="text-gray-300">Assédio virtual que pode causar danos psicológicos graves. Seu filho pode estar sendo humilhado ou ameaçado online sem que você saiba.</p>
+                </div>
+                
+                <!-- Exposure Card -->
+                <div class="feature-card bg-gray-800 rounded-lg p-6 shadow-lg border-t-4 border-red-500">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-red-500 p-3 rounded-full mr-4">
+                            <i class="fas fa-eye text-white text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">Exposição Inadequada</h3>
+                    </div>
+                    <p class="text-gray-300">Compartilhamento de informações pessoais ou imagens que podem colocar seu filho em risco ou ser usadas contra ele no futuro.</p>
+                </div>
+                
+                <!-- Inappropriate Content Card -->
+                <div class="feature-card bg-gray-800 rounded-lg p-6 shadow-lg border-t-4 border-red-500">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-red-500 p-3 rounded-full mr-4">
+                            <i class="fas fa-exclamation-triangle text-white text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">Conteúdo Impróprio</h3>
+                    </div>
+                    <p class="text-gray-300">Acesso fácil a material violento, sexual ou inadequado para a idade que pode prejudicar o desenvolvimento psicológico da criança.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Offer Section -->
+        <section class="bg-gray-800 rounded-xl p-8 shadow-xl border border-gray-700 mb-16">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold text-white mb-4">O QUE VOCÊ VAI APRENDER NESTE EBOOK?</h2>
+                <p class="text-gray-300 text-xl">Técnicas comprovadas para proteger seus filhos dos perigos digitais</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
+                <div>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-red-500 mt-1 mr-3"></i>
+                            <span class="text-gray-300">Como identificar sinais de grooming e predadores online</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-red-500 mt-1 mr-3"></i>
+                            <span class="text-gray-300">Ferramentas para monitorar e controlar o acesso à internet</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-red-500 mt-1 mr-3"></i>
+                            <span class="text-gray-300">Configurações de privacidade essenciais em todas as plataformas</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-red-500 mt-1 mr-3"></i>
+                            <span class="text-gray-300">Como lidar com casos de cyberbullying</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-red-500 mt-1 mr-3"></i>
+                            <span class="text-gray-300">Conversas importantes para ter com seus filhos sobre segurança digital</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-red-500 mt-1 mr-3"></i>
+                            <span class="text-gray-300">Aplicativos e recursos para proteger dispositivos</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <h3 class="text-2xl font-bold text-white mb-4">OFERTA ESPECIAL: R$19,90 (de R$54,90)</h3>
+                <a href="https://pay.cakto.com.br/o92784o_526497" class="pulse-animation inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-10 rounded-lg text-lg transition duration-300">
+                    QUERO PROTEGER MEUS FILHOS <i class="fas fa-shield-alt ml-2"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="mb-12 px-2">
+            <h2 class="text-xl font-bold text-center mb-6 text-white">PERGUNTAS FREQUENTES</h2>
+            
+            <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+                <div class="border-b border-gray-700 p-4">
+                    <button class="faq-btn flex justify-between items-center w-full text-left">
+                        <span class="text-base font-medium text-white">Como receberei o ebook após a compra?</span>
+                        <i class="fas fa-chevron-down text-red-500 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden mt-3 text-gray-300">
+                        O ebook será enviado para o e-mail cadastrado no ato da compra imediatamente após a confirmação do pagamento. Verifique sua caixa de spam caso não encontre na caixa de entrada.
+                    </div>
+                </div>
+                
+                <div class="border-b border-gray-700 p-5">
+                    <button class="faq-btn flex justify-between items-center w-full text-left">
+                        <span class="text-xl font-medium text-white">Quais formas de pagamento são aceitas?</span>
+                        <i class="fas fa-chevron-down text-red-500 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden mt-3 text-gray-300">
+                        Aceitamos cartões de crédito (todas as bandeiras), pix e boleto bancário. O pagamento é processado de forma segura pela plataforma Cakto.
+                    </div>
+                </div>
+                
+                <div class="border-b border-gray-700 p-5">
+                    <button class="faq-btn flex justify-between items-center w-full text-left">
+                        <span class="text-xl font-medium text-white">Posso compartilhar o ebook com outras pessoas?</span>
+                        <i class="fas fa-chevron-down text-red-500 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden mt-3 text-gray-300">
+                        Cada compra dá direito a um único uso pessoal. Compartilhar cópias não autorizadas é violação de direitos autorais.
+                    </div>
+                </div>
+                
+                <div class="p-5">
+                    <button class="faq-btn flex justify-between items-center w-full text-left">
+                        <span class="text-xl font-medium text-white">Como posso entrar em contato em caso de dúvidas?</span>
+                        <i class="fas fa-chevron-down text-red-500 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden mt-3 text-gray-300">
+                        Nosso suporte está disponível pelo e-mail: <a href="mailto:suporteeecontato@gmail.com" class="text-red-400 hover:underline">suporteeecontato@gmail.com</a>. Respondemos em até 24 horas úteis.
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- Final CTA -->
-        <div class="text-center mb-10">
-            <h3 class="text-2xl font-bold mb-4">Não Espere Que Algo Ruim Aconteça</h3>
-            <p class="mb-6">Por apenas <span class="text-green-400 font-bold">R$19,90</span> você terá acesso imediato a todas as estratégias que os especialistas usam para proteger crianças online.</p>
-            <a href="https://pay.cakto.com.br/o92784o_526497" class="bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-8 rounded-lg inline-block transition duration-300 transform hover:scale-105 text-lg">
-                GARANTIR MEU ACESSO <i class="fas fa-lock ml-2"></i>
-            </a>
-            <p class="text-xs mt-4 text-gray-400">Pagamento 100% seguro | Acesso imediato após a compra</p>
-        </div>
-
-        <!-- FAQ -->
-        <section class="mb-8">
-            <h3 class="text-xl font-bold mb-4 border-b border-gray-700 pb-2">Perguntas Frequentes</h3>
-            <div class="space-y-4">
-                <div class="border border-gray-700 rounded-lg p-4">
-                    <h4 class="font-bold mb-2">Como recebo o ebook após a compra?</h4>
-                    <p class="text-sm">Imediatamente após a confirmação do pagamento, você receberá um e-mail com o link para download do ebook em PDF.</p>
+        <section class="text-center mb-12 px-2">
+            <h2 class="text-xl font-bold text-white mb-4">NÃO ARRISQUE A SEGURANÇA DOS SEUS FILHOS</h2>
+            <p class="text-base text-gray-300 mb-6">Adquira agora o guia completo e durma tranquilo sabendo que seus filhos estão protegidos online.</p>
+            
+            <div class="max-w-xs mx-auto bg-gray-800 rounded-lg p-4 shadow-xl border border-gray-700">
+                <div class="flex justify-center items-center mb-4">
+                    <span class="text-gray-400 line-through text-base mr-3">R$54,90</span>
+                    <span class="text-2xl font-bold text-red-500">R$19,90</span>
                 </div>
-                <div class="border border-gray-700 rounded-lg p-4">
-                    <h4 class="font-bold mb-2">Posso imprimir o ebook?</h4>
-                    <p class="text-sm">Sim, o arquivo PDF pode ser impresso para sua conveniência.</p>
-                </div>
-                <div class="border border-gray-700 rounded-lg p-4">
-                    <h4 class="font-bold mb-2">E se eu não gostar do conteúdo?</h4>
-                    <p class="text-sm">Oferecemos 7 dias de garantia incondicional. Se por qualquer motivo você não estiver satisfeito, basta nos enviar um e-mail para receber o reembolso integral.</p>
-                </div>
-                <div class="border border-gray-700 rounded-lg p-4">
-                    <h4 class="font-bold mb-2">Precisa de suporte?</h4>
-                    <p class="text-sm">Entre em contato conosco pelo email: <a href="mailto:suporteeecontato@gmail.com" class="text-blue-400 hover:underline">suporteeecontato@gmail.com</a></p>
-                </div>
+                <a href="https://pay.cakto.com.br/o92784o_526497" class="pulse-animation bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg text-base w-full text-center block transition duration-300 mb-3">
+                    COMPRAR AGORA <i class="fas fa-lock ml-2"></i>
+                </a>
+                <p class="text-sm text-gray-400">Pagamento 100% seguro | Acesso imediato</p>
             </div>
         </section>
 
-        <!-- Final Offer -->
-        <div class="bg-gray-900 rounded-xl p-6 text-center">
-            <h3 class="text-xl font-bold mb-2">Oferta Termina em:</h3>
-            <div class="flex justify-center space-x-2 mb-4">
-                <div class="bg-gray-800 rounded p-2 w-12">
-                    <div class="font-bold">03</div>
-                    <div class="text-xs">Horas</div>
-                </div>
-                <div class="bg-gray-800 rounded p-2 w-12">
-                    <div class="font-bold">45</div>
-                    <div class="text-xs">Minutos</div>
-                </div>
-                <div class="bg-gray-800 rounded p-2 w-12">
-                    <div class="font-bold">22</div>
-                    <div class="text-xs">Segundos</div>
-                </div>
-            </div>
-            <a href="https://pay.cakto.com.br/o92784o_526497" class="bg-gradient-to-r from-red-600 to-orange-500 hover:from-red-700 hover:to-orange-600 text-white font-bold py-3 px-6 rounded-lg inline-block transition duration-300">
-                QUERO PROTEGER MEUS FILHOS AGORA
-            </a>
-        </div>
-
         <!-- Footer -->
-        <footer class="mt-10 text-center text-xs text-gray-500">
-            <p>© 2023 Proteção Digital Familiar. Todos os direitos reservados.</p>
-            <p class="mt-2"><a href="#" class="hover:underline">Termos de Uso</a> | <a href="#" class="hover:underline">Política de Privacidade</a></p>
+        <footer class="text-center text-gray-400 text-sm border-t border-gray-700 pt-8">
+            <p>© 2023 Proteja Seus Filhos na Internet. Todos os direitos reservados.</p>
+            <p class="mt-2">Dúvidas ou suporte: <a href="mailto:suporteeecontato@gmail.com" class="text-red-400 hover:underline">suporteeecontato@gmail.com</a></p>
+            <div class="mt-4 flex justify-center space-x-4">
+                <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+            </div>
         </footer>
     </div>
 
     <script>
-        // Simple countdown timer
+        // FAQ Accordion
+        document.querySelectorAll('.faq-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('i');
+                
+                content.classList.toggle('hidden');
+                icon.classList.toggle('rotate-180');
+                
+                // Close other open FAQs
+                document.querySelectorAll('.faq-btn').forEach(otherButton => {
+                    if (otherButton !== button) {
+                        otherButton.nextElementSibling.classList.add('hidden');
+                        otherButton.querySelector('i').classList.remove('rotate-180');
+                    }
+                });
+            });
+        });
+        
+        // Countdown timer (optional)
         function updateCountdown() {
             const now = new Date();
-            const endOfDay = new Date();
-            endOfDay.setHours(23, 59, 59, 999);
+            const midnight = new Date();
+            midnight.setHours(24, 0, 0, 0);
             
-            const diff = endOfDay - now;
-            
+            const diff = midnight - now;
             const hours = Math.floor(diff / (1000 * 60 * 60));
             const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
             const seconds = Math.floor((diff % (1000 * 60)) / 1000);
             
-            document.querySelectorAll('.bg-gray-800 div')[0].textContent = hours.toString().padStart(2, '0');
-            document.querySelectorAll('.bg-gray-800 div')[2].textContent = minutes.toString().padStart(2, '0');
-            document.querySelectorAll('.bg-gray-800 div')[4].textContent = seconds.toString().padStart(2, '0');
+            document.getElementById('countdown').textContent = `${hours}h ${minutes}m ${seconds}s`;
         }
         
         setInterval(updateCountdown, 1000);
         updateCountdown();
-        
-        // Add smooth scroll to links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
     </script>
 </body>
 </html>
